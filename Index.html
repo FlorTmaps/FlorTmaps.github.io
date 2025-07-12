@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css"> 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY11QCHL5X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WY11QCHL5X');
-</script>
 <html lang="en"> 
-    <!-- This is the HTML file for FlorTmaps -->
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
     <meta charset="UTF-8">
-    <!-- Google font stuff -->
+    <!-- Fixed Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
-   <!-- Google font end -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5:wght@400&display=swap" rel="stylesheet">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- This is the viewport meta tag for responsive design -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlorTmaps</title>
-    <h1>FlorTmaps</h1>
-     
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlorTMaps</title>
 </head>
 <body>
+    <header>
+        <h1>FlorTMaps</h1>
+        <nav>
+            <a href="#downloads" class="nav-button">Downloads</a>
+            <button class="hamburger" id="hamburger-button">&#9776;</button>
+            <ul class="menu" id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#discord">Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We make Minecraft maps for you! We are a small team of map makers currently working on a map called ParFormer.</p>
+            <p>ParFormer is a parkour map that starts 1 block wide and gets wider with every level, offering a unique and challenging experience.</p>
+        </section>
+        <section id="discord">
+            <h2>Join Our Community</h2>
+            <p>Connect with us on Discord to stay updated and share your feedback!</p>
+            <a href="https://discord.gg/vjFyvcd5up" class="button">Join Discord</a>
+        </section>
+        <section id="downloads">
+            <h2>Downloads</h2>
+            <p>Download our latest Minecraft map, ParFormer, and start your parkour adventure!</p>
+            <a href="downloads/ParFormer.zip" class="button">Download Map</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 FlorTMaps. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for hamburger menu toggle
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const menu = document.getElementById('menu');
+        hamburgerButton.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
     <p> We make minecraft maps for you! </p>
     <p> We are a small team of map makers who make maps for you to play on. </p>
     <p> We are currently working on a map called ParFormer which is a parkour map that is currently in development. </p>
     <p> It is a parkour map that is 1 block wide and has a lot of different levels. </p>
-    
-    <a href="test124mc.github.io" class="button">Testing</a>
 </html>
